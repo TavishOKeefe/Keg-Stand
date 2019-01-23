@@ -1,0 +1,13 @@
+<h2>Add Keg</h2>
+
+<form class="newBeer">
+  <label>Name of Beer</label>
+  <input type="text" #name><br/>
+  <label>Name of Company</label>
+  <input type="text" #brand><br/>
+  <label>Price per Pint</label>
+  <input type="number" #price><br/>
+  <label>IBU</label>
+  <input type="number" #alcoholContent><br/>
+  <button (click)="submitForm(name.value, brand.value, price.value, alcoholContent.value); name.value=''; brand.value=''; price.value=''; alcoholContent.value='';">Add Keg</button>
+</form>
