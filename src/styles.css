@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+h2 {
+  margin-top: 30px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: lighter;
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  position: sticky;
+  left: 0px;
+  right: 0px;
+  font-size: 55px;
+  margin-bottom: 40px;
+}
+
+.container {
+  margin-bottom: 50px;
+}

@@ -2,12 +2,12 @@
 
 <form class="newBeer">
   <label>Name of Beer</label>
-  <input type="text" #name><br/>
+  <input type="text" #name class="form-control"><br/>
   <label>Name of Company</label>
-  <input type="text" #brand><br/>
+  <input type="text" #brand class="form-control"><br/>
   <label>Price per Pint</label>
-  <input type="number" #price><br/>
+  <input type="number" #price class="form-control"><br/>
   <label>IBU</label>
-  <input type="number" #alcoholContent><br/>
-  <button (click)="submitForm(name.value, brand.value, price.value, alcoholContent.value); name.value=''; brand.value=''; price.value=''; alcoholContent.value='';">Add Keg</button>
+  <input type="number" #alcoholContent class="form-control"><br/>
+  <button (click)="submitForm(name.value, brand.value, price.value, alcoholContent.value); name.value=''; brand.value=''; price.value=''; alcoholContent.value='';" class="btn btn-primary">Add Keg</button>
 </form>

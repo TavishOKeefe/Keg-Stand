@@ -1,11 +1,14 @@
-<div *ngFor="let keg of childKegList">
-  <h2>{{keg.name}}</h2>
-  <p>{{ keg.brand }}</p>
-  <p>{{ keg.price }}</p>
-  <p>{{ keg.alcoholContent }}</p>
-  <p>{{ keg.volume }}</p>
-  <button (click)="editButtonClicked(keg)">Edit</button>
+<div class="kegList">
+
+  <div *ngFor="let keg of childKegList" class="keg">
+    <h2>{{keg.name}}</h2>
+    <p><strong>Brand:</strong> {{ keg.brand }}<br>
+    <strong>Price:</strong> {{ keg.price }}<br>
+    <strong> IBU:</strong> {{ keg.alcoholContent }}<br>
+    <strong>Remaining Pints:</strong> {{ keg.volume }}</p>
+    <button (click)="editButtonClicked(keg)" class="btn btn-primary">Edit</button>
+    <br>
+  </div>
 
 </div>
-
   <!-- constructor(public name: string, public brand: string, public price: number, public alcoholContent: number) { -->

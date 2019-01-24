@@ -1,7 +1,7 @@
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-
+<h1>Welcome to Taproom!</h1>
+<div class="container">
   <app-keg-list [childKegList]="masterKegList" (clickSender)="editKeg($event)"></app-keg-list>
   <app-add-keg (sendKeg)="addKeg($event)"></app-add-keg>
   <app-edit-keg *ngIf="selectedKeg" [childSelectedKeg]="selectedKeg" (clickedDone)="finishedEditing()"></app-edit-keg>
+
+</div>

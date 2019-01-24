@@ -15,7 +15,7 @@ export class AddKegComponent implements OnInit {
   ngOnInit() {
   }
 
-  submitForm(public name: string, public brand: string, public price: string, public alcoholContent: string) {
+  submitForm(name , brand, price, alcoholContent) {
     let newKeg: Keg = new Keg(name, brand, parseInt(price), parseInt(alcoholContent));
       this.sendKeg.emit(newKeg);
   }

@@ -1,13 +1,13 @@
 <h2>Edit Keg</h2>
 <form>
   <label>Update Beer</label>
-  <input type="text" [(ngModel)]="childSelectedKeg.name" name="name"><br/>
+  <input type="text" [(ngModel)]="childSelectedKeg.name" name="name" class="form-control"><br/>
   <label>Update Company</label>
-  <input type="text" [(ngModel)]="childSelectedKeg.brand" name="brand"><br/>
+  <input type="text" [(ngModel)]="childSelectedKeg.brand" name="brand" class="form-control"><br/>
   <label>Update price per Pint</label>
-  <input type="number" [(ngModel)]="childSelectedKeg.price" name="price"><br/>
+  <input type="number" [(ngModel)]="childSelectedKeg.price" name="price" class="form-control"><br/>
   <label>Update IBU</label>
-  <input type="number" [(ngModel)]="childSelectedKeg.alcoholContent" name="IBU"><br/>
+  <input type="number" [(ngModel)]="childSelectedKeg.alcoholContent" name="IBU" class="form-control"><br/>
 </form>
 
-<button (click)="finishedEditing()">Finish Editing</button>
+<button (click)="finishedEditing()" class="btn btn-primary">Finish Editing</button>

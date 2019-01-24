@@ -1,0 +1,10 @@
+.kegList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.keg {
+  background-color:	#F8F8F8;
+  margin: 20px;
+  padding: 20px;
+}
